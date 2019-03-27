@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_color_avatar/flutter_color_avatar.dart';
+import 'package:flutter_color_avatar/color_avatar.dart';
 
 void main() => runApp(MyApp());
 

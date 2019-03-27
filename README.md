@@ -1,14 +1,22 @@
-# flutter_color_avatar
 
-Give a color related to an avatar name.
+# flutter_color_avatar  
+  
+Give a color related to an avatar name.  
+  
+## Getting Started  
+  
+Add this to your package's pubspec.yaml file:  
 
-## Getting Started
+```dart  
+dependencies: 
+ flutter_color_avatar: ^0.0.1  
+```
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.io/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+You just need to call the function **getColorFromName** to retrieve a material color corresponding  
+to a text, username, email, etc...  
+  
+```dart  
+import 'package:flutter_color_avatar/color_avatar.dart';  
+  
+ColorAvatar.getColorFromName("Google");  
+```
