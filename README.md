@@ -16,7 +16,7 @@ You just need to call the function **getColorFromName** to retrieve a material c
 to a text, username, email, etc...  
   
 ```dart  
-import 'package:flutter_color_avatar/color_avatar.dart';  
+import 'package:flutter_color_avatar/flutter_color_avatar.dart';
   
 ColorAvatar.getColorFromName("Google");  
 ```

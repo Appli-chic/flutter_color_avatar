@@ -1,8 +1,9 @@
 name: flutter_color_avatar
 description: Gives a color related to an avatar name.
 version: 0.0.1
-author: applichic
+author: applichic <applichic@gmail.com>
 homepage: https://github.com/Appli-chic/flutter_color_avatar
+repository: https://github.com/Appli-chic/flutter_color_avatar
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
