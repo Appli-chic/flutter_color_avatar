@@ -9,6 +9,14 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  TextEditingController _textEditingController = TextEditingController();
+
+  @override
+  void initState() {
+    this._textEditingController.text = "Google";
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,15 +31,16 @@ class _MyAppState extends State<MyApp> {
               Container(
                 width: 100,
                 height: 100,
-                color: ColorAvatar.getColorFromName("Google"),
+                color: ColorAvatar.getColorFromName(
+                    this._textEditingController.text),
               ),
               Container(
-                margin: EdgeInsets.only(top: 16),
-                child: IconButton(
-                  icon: Icon(Icons.refresh),
-                  onPressed: () {
-                    setState(() {});
+                margin: EdgeInsets.all(16),
+                child: TextField(
+                  onChanged: (text) {
+                    this.setState(() {});
                   },
+                  controller: this._textEditingController,
                 ),
               ),
             ],
